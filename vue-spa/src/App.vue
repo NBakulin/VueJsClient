@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>Note taking web-page</h1>
+    <span v-on:click="displayQuote()">{{ new Date() | moment("dddd, MMMM Do YYYY") }}</span>
     <blockquote v-on:click="displayQuote()">
       <p>{{currentQuote.content}}</p>
       <footer>
